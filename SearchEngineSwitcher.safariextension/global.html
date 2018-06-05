@@ -1,51 +1,49 @@
 <!doctype html>
-<html>
-<head></head>
-<body>
-<script>
+<html><body><script type="text/javascript">
+
 if (window.top === window){
-
-safari.application.addEventListener("command", performCommand, false);
-safari.application.addEventListener("validate", validateCommand, false);
-
+  // Not an iframe
+  safari.application.addEventListener("command", performCommand, false)
+  safari.application.addEventListener("validate", validateCommand, false)
 }
 
+/*
+  Event.command matches the "Identifier" field
+  in Extension Builder instead of "Command" field...
+  WTF??? IDK.
+*/
 function performCommand(Event) {
-
   if (Event.command == "switch") {
     sendToJS("switchSearchEngine")
   }
 }
 
-function sendToJS(eventName, eventMessage) { 
-  safari.application.activeBrowserWindow.activeTab.page.dispatchMessage
-  (eventName, eventMessage); 
-}
-
-
 function validateCommand(Event) {
-
-  var activeUrl = Event.target.browserWindow.activeTab.url
-  var hostname = getHostnameFormUrl(activeUrl)
-
-  if ((/(baidu)/).test(hostname)) {
-    Event.target.image = safari.extension.baseURI + "toolbar-icon-google.png"
-    Event.target.disabled = false
-  } else if ((/(google)/).test(hostname)) {
-    Event.target.image = safari.extension.baseURI + "toolbar-icon-baidu.png"
-    Event.target.disabled = false
-  } else {
-    Event.target.image = safari.extension.baseURI + "toolbar-icon.png"
-    Event.target.disabled = true
+  // Update toolbar icon
+  if (Event.command == "switch") {
+    var activeUrl = Event.target.browserWindow.activeTab.url
+    var hostname = getHostnameFormUrl(activeUrl)
+    
+    if ((/(baidu)/).test(hostname)) {
+        Event.target.image = safari.extension.baseURI + "toolbar-icon-google.png"
+        Event.target.disabled = false
+    } else if ((/(google)/).test(hostname)) {
+        Event.target.image = safari.extension.baseURI + "toolbar-icon-baidu.png"
+        Event.target.disabled = false
+    } else {
+        Event.target.image = safari.extension.baseURI + "toolbar-icon.png"
+        Event.target.disabled = true
+    }
+    function getHostnameFormUrl(url) {
+      var parser = document.createElement('a')
+      parser.href = url
+      return parser.hostname
+    }
   }
 }
 
-function getHostnameFormUrl(url) {
-  var parser = document.createElement('a');
-  parser.href = url;
-  return parser.hostname;
+function sendToJS(eventName, eventMessage) { 
+  safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(eventName, eventMessage)
 }
 
-</script>
-</body>
-</html>
+</script></body></html>
