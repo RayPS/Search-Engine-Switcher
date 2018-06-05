@@ -10,11 +10,11 @@
        <key>Developer Identifier</key>
        <string>MGAF98TG33</string>
        <key>CFBundleVersion</key>
-       <string>2.0</string>
+       <string>2.0.1</string>
        <key>CFBundleShortVersionString</key>
-       <string>2.0</string>
+       <string>2.0.1</string>
        <key>URL</key>
-       <string>path/to/SearchEngineSwitcher.safariextz</string>
+       <string>https://github.com/RayPS/Search-Engine-Switcher/blob/master/SearchEngineSwitcher.safariextz?raw=true</string>
      </dict>
    </array>
 </dict>

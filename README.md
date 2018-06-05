@@ -2,6 +2,6 @@
 
 Safari Extension: Switch search engines between Google and Baidu.
 
-<http://lab.rayps.com/ses/>
+Download from the latest [Release](../../releases) or [(in review...)](#)
 
 ![](image.png)
