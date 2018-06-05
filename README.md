@@ -1,10 +1,7 @@
 #### Search Engine Switcher
 
-Safari Extension
-
-Switch search engines between Google and Baidu
-With one click.
+Safari Extension: Switch search engines between Google and Baidu.
 
 <http://lab.rayps.com/ses/>
 
-![](http://lab.rayps.com/ses/image.png)
+![](image.png)
