@@ -32,7 +32,7 @@
 				<key>Palette Label</key>
 				<string>Search Engine Switcher</string>
 				<key>Tool Tip</key>
-				<string>Search Engine Switcher</string>
+				<string>Switch Search Engine</string>
 			</dict>
 		</array>
 	</dict>
@@ -49,7 +49,7 @@
 	<key>Description</key>
 	<string>Switch search engine between Google and Baidu.</string>
 	<key>DeveloperIdentifier</key>
-	<string>0000000000</string>
+	<string>MGAF98TG33</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -61,7 +61,6 @@
 				<string>*.baidu.com</string>
 				<string>*.google.com</string>
 				<string>*.google.com.hk</string>
-				<string>*.google.com.tw</string>
 				<string>*.google.com.sg</string>
 				<string>*.google.com.jp</string>
 			</array>
