@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>RayPS</string>
+	<string>rayps.com</string>
 	<key>Builder Version</key>
-	<string>10600.7.12</string>
+	<string>13605.1.33.1.4</string>
 	<key>CFBundleDisplayName</key>
 	<string>Search Engine Switcher</string>
 	<key>CFBundleIdentifier</key>
