@@ -71,7 +71,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://rayps.qiniudn.com/Safari_Extension_Update.plist</string>
+	<string>https://raw.githubusercontent.com/RayPS/Search-Engine-Switcher/master/manifest.plist</string>
 	<key>Website</key>
 	<string>http://lab.rayps.com/ses/</string>
 </dict>
