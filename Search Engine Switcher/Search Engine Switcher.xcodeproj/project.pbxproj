@@ -11,7 +11,38 @@
 		7198D55820D02278004C2487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198D55720D02278004C2487 /* ViewController.swift */; };
 		7198D55A20D02279004C2487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7198D55920D02279004C2487 /* Assets.xcassets */; };
 		7198D55D20D02279004C2487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7198D55B20D02279004C2487 /* Main.storyboard */; };
+		7198D56C20D02336004C2487 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198D56B20D02336004C2487 /* Cocoa.framework */; };
+		7198D56F20D02336004C2487 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */; };
+		7198D57120D02336004C2487 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198D57020D02336004C2487 /* SafariExtensionViewController.swift */; };
+		7198D57420D02336004C2487 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7198D57220D02336004C2487 /* SafariExtensionViewController.xib */; };
+		7198D57720D02336004C2487 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7198D57620D02336004C2487 /* script.js */; };
+		7198D57920D02336004C2487 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */; };
+		7198D57D20D02336004C2487 /* Search Engine Switcher Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7198D56920D02336004C2487 /* Search Engine Switcher Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7198D57B20D02336004C2487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7198D54A20D02278004C2487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7198D56820D02336004C2487;
+			remoteInfo = "Search Engine Switcher Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7198D58120D02336004C2487 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7198D57D20D02336004C2487 /* Search Engine Switcher Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7198D55220D02278004C2487 /* Search Engine Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search Engine Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +52,15 @@
 		7198D55C20D02279004C2487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7198D55E20D02279004C2487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7198D55F20D02279004C2487 /* Search_Engine_Switcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Search_Engine_Switcher.entitlements; sourceTree = "<group>"; };
+		7198D56920D02336004C2487 /* Search Engine Switcher Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Search Engine Switcher Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7198D56B20D02336004C2487 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		7198D57020D02336004C2487 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		7198D57320D02336004C2487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		7198D57520D02336004C2487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7198D57620D02336004C2487 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		7198D57A20D02336004C2487 /* Search_Engine_Switcher_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Search_Engine_Switcher_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7198D56620D02336004C2487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7198D56C20D02336004C2487 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				7198D55420D02278004C2487 /* Search Engine Switcher */,
+				7198D56D20D02336004C2487 /* Search Engine Switcher Extension */,
+				7198D56A20D02336004C2487 /* Frameworks */,
 				7198D55320D02278004C2487 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				7198D55220D02278004C2487 /* Search Engine Switcher.app */,
+				7198D56920D02336004C2487 /* Search Engine Switcher Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +114,28 @@
 			path = "Search Engine Switcher";
 			sourceTree = "<group>";
 		};
+		7198D56A20D02336004C2487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7198D56B20D02336004C2487 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7198D56D20D02336004C2487 /* Search Engine Switcher Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */,
+				7198D57020D02336004C2487 /* SafariExtensionViewController.swift */,
+				7198D57220D02336004C2487 /* SafariExtensionViewController.xib */,
+				7198D57520D02336004C2487 /* Info.plist */,
+				7198D57620D02336004C2487 /* script.js */,
+				7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */,
+				7198D57A20D02336004C2487 /* Search_Engine_Switcher_Extension.entitlements */,
+			);
+			path = "Search Engine Switcher Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +146,34 @@
 				7198D54E20D02278004C2487 /* Sources */,
 				7198D54F20D02278004C2487 /* Frameworks */,
 				7198D55020D02278004C2487 /* Resources */,
+				7198D58120D02336004C2487 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7198D57C20D02336004C2487 /* PBXTargetDependency */,
 			);
 			name = "Search Engine Switcher";
 			productName = "Search Engine Switcher";
 			productReference = 7198D55220D02278004C2487 /* Search Engine Switcher.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7198D56820D02336004C2487 /* Search Engine Switcher Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7198D57E20D02336004C2487 /* Build configuration list for PBXNativeTarget "Search Engine Switcher Extension" */;
+			buildPhases = (
+				7198D56520D02336004C2487 /* Sources */,
+				7198D56620D02336004C2487 /* Frameworks */,
+				7198D56720D02336004C2487 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Search Engine Switcher Extension";
+			productName = "Search Engine Switcher Extension";
+			productReference = 7198D56920D02336004C2487 /* Search Engine Switcher Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +186,9 @@
 				ORGANIZATIONNAME = Ray;
 				TargetAttributes = {
 					7198D55120D02278004C2487 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					7198D56820D02336004C2487 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -112,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				7198D55120D02278004C2487 /* Search Engine Switcher */,
+				7198D56820D02336004C2487 /* Search Engine Switcher Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +219,16 @@
 			files = (
 				7198D55A20D02279004C2487 /* Assets.xcassets in Resources */,
 				7198D55D20D02279004C2487 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7198D56720D02336004C2487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7198D57920D02336004C2487 /* ToolbarItemIcon.pdf in Resources */,
+				7198D57420D02336004C2487 /* SafariExtensionViewController.xib in Resources */,
+				7198D57720D02336004C2487 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +244,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7198D56520D02336004C2487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7198D57120D02336004C2487 /* SafariExtensionViewController.swift in Sources */,
+				7198D56F20D02336004C2487 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7198D57C20D02336004C2487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7198D56820D02336004C2487 /* Search Engine Switcher Extension */;
+			targetProxy = 7198D57B20D02336004C2487 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7198D55B20D02279004C2487 /* Main.storyboard */ = {
@@ -147,6 +270,14 @@
 				7198D55C20D02279004C2487 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7198D57220D02336004C2487 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7198D57320D02336004C2487 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +399,7 @@
 		7198D56320D02279004C2487 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Search Engine Switcher/Search_Engine_Switcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +419,7 @@
 		7198D56420D02279004C2487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Search Engine Switcher/Search_Engine_Switcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +432,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.Search-Engine-Switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		7198D57F20D02336004C2487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Search Engine Switcher Extension/Search_Engine_Switcher_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGAF98TG33;
+				INFOPLIST_FILE = "Search Engine Switcher Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.Search-Engine-Switcher.Search-Engine-Switcher-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7198D58020D02336004C2487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Search Engine Switcher Extension/Search_Engine_Switcher_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGAF98TG33;
+				INFOPLIST_FILE = "Search Engine Switcher Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.Search-Engine-Switcher.Search-Engine-Switcher-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -320,6 +491,15 @@
 			buildConfigurations = (
 				7198D56320D02279004C2487 /* Debug */,
 				7198D56420D02279004C2487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7198D57E20D02336004C2487 /* Build configuration list for PBXNativeTarget "Search Engine Switcher Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7198D57F20D02336004C2487 /* Debug */,
+				7198D58020D02336004C2487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
