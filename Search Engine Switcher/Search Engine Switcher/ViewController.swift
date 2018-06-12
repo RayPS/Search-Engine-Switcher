@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SafariServices
 
 class ViewController: NSViewController {
 
@@ -22,6 +23,14 @@ class ViewController: NSViewController {
         }
     }
 
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        NSApplication.shared.terminate(self)
+        return true
+    }
+
+    @IBAction func openSafariPreference(_ sender: Any) {
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.rayps.Search-Engine-Switcher.Search-Engine-Switcher-Extension")
+    }
 
 }
 
