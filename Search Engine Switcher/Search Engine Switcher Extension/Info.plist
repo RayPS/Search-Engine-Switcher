@@ -42,9 +42,9 @@
 			<key>Identifier</key>
 			<string>Button</string>
 			<key>Image</key>
-			<string>ToolbarItemIcon.pdf</string>
+			<string>toolbar-icon.pdf</string>
 			<key>Label</key>
-			<string>Your Button</string>
+			<string>Switch Search Engine</string>
 		</dict>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>

@@ -14,8 +14,10 @@
 		7198D56C20D02336004C2487 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198D56B20D02336004C2487 /* Cocoa.framework */; };
 		7198D56F20D02336004C2487 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */; };
 		7198D57720D02336004C2487 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7198D57620D02336004C2487 /* script.js */; };
-		7198D57920D02336004C2487 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */; };
 		7198D57D20D02336004C2487 /* Search Engine Switcher Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7198D56920D02336004C2487 /* Search Engine Switcher Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7198D58520D0299D004C2487 /* toolbar-icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7198D58220D0299D004C2487 /* toolbar-icon.pdf */; };
+		7198D58620D0299D004C2487 /* toolbar-icon-google.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7198D58320D0299D004C2487 /* toolbar-icon-google.pdf */; };
+		7198D58720D0299D004C2487 /* toolbar-icon-baidu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7198D58420D0299D004C2487 /* toolbar-icon-baidu.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +57,10 @@
 		7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		7198D57520D02336004C2487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7198D57620D02336004C2487 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		7198D57A20D02336004C2487 /* Search_Engine_Switcher_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Search_Engine_Switcher_Extension.entitlements; sourceTree = "<group>"; };
+		7198D58220D0299D004C2487 /* toolbar-icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "toolbar-icon.pdf"; sourceTree = "<group>"; };
+		7198D58320D0299D004C2487 /* toolbar-icon-google.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "toolbar-icon-google.pdf"; sourceTree = "<group>"; };
+		7198D58420D0299D004C2487 /* toolbar-icon-baidu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "toolbar-icon-baidu.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,9 @@
 				7198D56E20D02336004C2487 /* SafariExtensionHandler.swift */,
 				7198D57520D02336004C2487 /* Info.plist */,
 				7198D57620D02336004C2487 /* script.js */,
-				7198D57820D02336004C2487 /* ToolbarItemIcon.pdf */,
+				7198D58420D0299D004C2487 /* toolbar-icon-baidu.pdf */,
+				7198D58320D0299D004C2487 /* toolbar-icon-google.pdf */,
+				7198D58220D0299D004C2487 /* toolbar-icon.pdf */,
 				7198D57A20D02336004C2487 /* Search_Engine_Switcher_Extension.entitlements */,
 			);
 			path = "Search Engine Switcher Extension";
@@ -220,7 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7198D57920D02336004C2487 /* ToolbarItemIcon.pdf in Resources */,
+				7198D58520D0299D004C2487 /* toolbar-icon.pdf in Resources */,
+				7198D58720D0299D004C2487 /* toolbar-icon-baidu.pdf in Resources */,
+				7198D58620D0299D004C2487 /* toolbar-icon-google.pdf in Resources */,
 				7198D57720D02336004C2487 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
