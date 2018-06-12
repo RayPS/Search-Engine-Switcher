@@ -50,7 +50,11 @@
 		<dict>
 			<key>Allowed Domains</key>
 			<array>
-				<string>*.webkit.org</string>
+				<string>*.google.com</string>
+				<string>*.google.com.hk</string>
+				<string>*.google.com.jp</string>
+				<string>*.google.com.sg</string>
+				<string>*.baidu.com</string>
 			</array>
 			<key>Level</key>
 			<string>Some</string>
