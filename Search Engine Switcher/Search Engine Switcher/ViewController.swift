@@ -9,12 +9,29 @@
 import Cocoa
 import SafariServices
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSWindowDelegate {
+
+    @IBOutlet weak var enableIndicator: NSTextField!
+    @IBOutlet weak var infomationLabel: NSTextField!
+    @IBOutlet weak var enableButton: NSButton!
+
+    let extId = "com.rayps.Search-Engine-Switcher.Search-Engine-Switcher-Extension"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear() {
+        checkExtensionState()
+    }
+
+    override func viewDidAppear() {
+        view.window!.delegate = self
+        view.window!.styleMask.remove(.resizable)
+
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.checkExtensionState), userInfo: nil, repeats: true)
     }
 
     override var representedObject: Any? {
@@ -28,8 +45,20 @@ class ViewController: NSViewController {
         return true
     }
 
-    @IBAction func openSafariPreference(_ sender: Any) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.rayps.Search-Engine-Switcher.Search-Engine-Switcher-Extension")
+    @objc func checkExtensionState() {
+        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extId) { (state, error) in
+            DispatchQueue.main.async {
+                if let status = state?.isEnabled {
+                    self.enableIndicator.textColor = status ? .systemGreen : .systemRed
+                    self.infomationLabel.stringValue = status ? "Enabled" : "Extension is currently disabled"
+                    self.enableButton.isHidden = status
+                }
+            }
+        }
+    }
+
+    @IBAction func enableButtonClicked(_ sender: Any) {
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: extId)
     }
 
 }
