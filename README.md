@@ -1,4 +1,4 @@
-![](Search%20Engine%20Switcher/Search%20Engine%20Switcher/Assets.xcassets/AppIcon.appiconset/icon128pt@2x.png?raw=true)
+![](mas-appicon.png)
 
 # Search Engine Switcher
 A Safari Extension to let switch search engine between Google and Baidu.
