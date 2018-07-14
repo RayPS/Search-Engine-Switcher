@@ -24,7 +24,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             let isGoogle = url?.host?.range(of: "google") != nil
 
             let queryKey = isGoogle ? "q" : "wd"
-            let keyword = url?.queryParameters?[queryKey] ?? ""
+            let keyword = (url?.queryParameters?[queryKey] ?? "").urlParameterEncode()
+
             let switchedUrlString = isGoogle ? "https://baidu.com/s?wd=\(keyword)" : "https://google.com/search?q=\(keyword)"
             page?.dispatchMessageToScript(withName: "switch", userInfo: ["switchedUrlString": switchedUrlString])
         }
@@ -85,5 +86,14 @@ extension URL {
         }
 
         return parameters
+    }
+}
+
+
+extension String {
+    func urlParameterEncode() -> String {
+        var allowed = CharacterSet.alphanumerics
+        allowed.insert(charactersIn: ".-_")
+        return self.addingPercentEncoding(withAllowedCharacters: allowed)!
     }
 }
